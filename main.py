@@ -4,8 +4,8 @@ from supabase import create_client, Client
 import pandas as pd
 
 # Configurar Supabase
-SUPABASE_URL = st.secrets["SUPABASE_URL"]
-SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
+SUPABASE_URL = st.secrets["https://xhnskoldrpeslxhbyami.supabase.co"]
+SUPABASE_KEY = st.secrets["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhobnNrb2xkcnBlc2x4aGJ5YW1pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQwMzA1NDUsImV4cCI6MjAzOTYwNjU0NX0.yhv4xvz5AvNKNmkMGK0xOXozVbfn6XlRCwr9TFZUxnw"]
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 st.title("Sistema de Gestión de Almacén")
